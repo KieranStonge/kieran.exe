@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIERAN.EXE | Software Engineer</title>
+  <meta name="description" content="KIERAN.EXE - Retro-futuristic portfolio with an interactive deployment defender mini-game." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a href="#home" class="brand">KIERAN.EXE</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#game">Game</a>
+      <a id="resume-link" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero reveal">
+      <p class="status-line">[ SYSTEM BOOT :: READY ]</p>
+      <h1>
+        <span class="glitch" data-text="KIERAN ST-ONGE">KIERAN ST-ONGE</span>
+      </h1>
+      <p class="terminal-line"><span id="typewriter"></span><span class="cursor">_</span></p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn" href="#game">Play Mini-Game</a>
+      </div>
+    </section>
+
+    <section id="about" class="panel reveal">
+      <h2>About</h2>
+      <div class="about-card tilt-card">
+        <p>
+          Software Engineer focused on automation, cloud infrastructure, and practical product delivery.
+          I build systems that reduce manual overhead and make deployments reliable.
+        </p>
+        <p>
+          Core strengths: full-stack development, CI/CD tooling, backend integrations, and shipping fast without
+          sacrificing maintainability.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="panel reveal">
+      <h2>Experience Logs</h2>
+      <div class="timeline">
+        <article>
+          <h3>SSMK Consulting</h3>
+          <p class="timeline-meta">Junior Software Engineer</p>
+          <p>Built internal automation and client-facing tooling across cloud workflows, release pipelines, and integrations.</p>
+        </article>
+        <article>
+          <h3>Michelin</h3>
+          <p class="timeline-meta">Junior Engineering / Technical Operations</p>
+          <p>Contributed to process improvements and systems reliability initiatives in high-standards production environments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel reveal">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="assets/screenshots/releasebot-ui.png" alt="ReleaseBot project screenshot" loading="lazy" />
+          <div>
+            <h3>ReleaseBot</h3>
+            <p>Automated deployment coordination with pipeline visibility and release guardrails.</p>
+            <ul>
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/screenshots/slackbot-thread.png" alt="SlackBot project screenshot" loading="lazy" />
+          <div>
+            <h3>SlackBot Automation</h3>
+            <p>Workflow bot for engineering alerts, triage routing, and status reporting inside Slack.</p>
+            <ul>
+              <li>Node.js</li>
+              <li>Webhooks</li>
+              <li>Ops Automation</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/screenshots/devops-dashboard.png" alt="DevOps dashboard screenshot" loading="lazy" />
+          <div>
+            <h3>Deployment Telemetry</h3>
+            <p>Live operational dashboard for release health and production incident prevention.</p>
+            <ul>
+              <li>Monitoring</li>
+              <li>Lambda</li>
+              <li>Incident Response</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="panel reveal">
+      <h2>Skills Matrix</h2>
+      <div class="skills">
+        <div class="skill"><span>JavaScript</span><div class="bar"><i style="--w: 92%"></i></div></div>
+        <div class="skill"><span>TypeScript</span><div class="bar"><i style="--w: 89%"></i></div></div>
+        <div class="skill"><span>Python</span><div class="bar"><i style="--w: 70%"></i></div></div>
+        <div class="skill"><span>Java</span><div class="bar"><i style="--w: 62%"></i></div></div>
+        <div class="skill"><span>Ruby</span><div class="bar"><i style="--w: 76%"></i></div></div>
+        <div class="skill"><span>Ruby on Rails</span><div class="bar"><i style="--w: 68%"></i></div></div>
+        <div class="skill"><span>React</span><div class="bar"><i style="--w: 82%"></i></div></div>
+        <div class="skill"><span>Node.js</span><div class="bar"><i style="--w: 85%"></i></div></div>
+        <div class="skill"><span>Lightning Web Components</span><div class="bar"><i style="--w: 66%"></i></div></div>
+        <div class="skill"><span>AWS (EC2, Lambda, API Gateway)</span><div class="bar"><i style="--w: 90%"></i></div></div>
+        <div class="skill"><span>Docker</span><div class="bar"><i style="--w: 88%"></i></div></div>
+        <div class="skill"><span>Terraform</span><div class="bar"><i style="--w: 74%"></i></div></div>
+        <div class="skill"><span>CI/CD Automation</span><div class="bar"><i style="--w: 92%"></i></div></div>
+        <div class="skill"><span>Ansible</span><div class="bar"><i style="--w: 73%"></i></div></div>
+        <div class="skill"><span>REST APIs / GraphQL</span><div class="bar"><i style="--w: 86%"></i></div></div>
+        <div class="skill"><span>PostgreSQL / SQL</span><div class="bar"><i style="--w: 80%"></i></div></div>
+        <div class="skill"><span>Apex / Salesforce</span><div class="bar"><i style="--w: 72%"></i></div></div>
+        <div class="skill"><span>GitHub / Jira / Linear</span><div class="bar"><i style="--w: 90%"></i></div></div>
+      </div>
+    </section>
+
+    <section id="game" class="panel reveal">
+      <h2>Deployment Defender</h2>
+      <p class="game-subtitle">Shoot incoming bugs before they crash prod. Collect power-ups: ☁️ AWS, 🐳 Docker, ⚡ Lambda.</p>
+      <div class="game-wrap">
+        <div class="game-stats">
+          <span>Score: <strong id="score">0</strong></span>
+          <span>Level: <strong id="level">1</strong></span>
+          <span>Lives: <strong id="lives">1</strong></span>
+          <span>High: <strong id="high-score">0</strong></span>
+        </div>
+        <canvas id="game-canvas" width="900" height="520" aria-label="Deployment Defender Game"></canvas>
+        <div class="controls">
+          <button id="start-game" class="btn btn-primary">Start / Restart</button>
+          <p>Controls: <code>A</code>/<code>D</code> or <code>←</code>/<code>→</code> to move, <code>Space</code> to deploy.</p>
+        </div>
+        <div class="mobile-controls">
+          <button id="move-left" aria-label="Move Left">◀</button>
+          <button id="shoot" aria-label="Shoot">DEPLOY</button>
+          <button id="move-right" aria-label="Move Right">▶</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> KIERAN.EXE | Built for GitHub Pages</p>
+  </footer>
+
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
